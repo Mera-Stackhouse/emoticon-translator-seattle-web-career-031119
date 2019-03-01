@@ -28,4 +28,4 @@ def get_english_meaning
 end
 
 
-load_library(file)
+puts load_library(file)
