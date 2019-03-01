@@ -10,9 +10,9 @@ def load_library(file)
     key1 = key
     value.each {|element|
       if value.index(element) == 0 
-        new_hash[:get_emoticon][element] = value[1]
+        new_hash["get_emoticon"][element] = value[1]
       elsif value.index(element) == 1 
-        new_hash[:get_meaning][element] = key1
+        new_hash["get_meaning"][element] = key1
       end
     }
   }
