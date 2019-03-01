@@ -6,7 +6,6 @@ require "yaml"
 def load_library(file)
   hash = YAML.load_file(file)
   hash.each {|key, value|
-    binding.pry
   }
 end
 
