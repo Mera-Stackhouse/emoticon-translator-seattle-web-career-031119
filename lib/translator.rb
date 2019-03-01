@@ -25,6 +25,7 @@ def get_japanese_emoticon(file, emoticon)
     hash["get_emoticon"].each {|key, value|
       if key == emoticon
         value
+        binding.pry
       end
     }
   else
