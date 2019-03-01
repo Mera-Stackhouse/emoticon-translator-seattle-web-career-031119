@@ -19,8 +19,17 @@ def load_library(file)
   new_hash
 end
 
-def get_japanese_emoticon
-  # code goes here
+def get_japanese_emoticon(file, emoticon)
+  hash = load_library(file)
+  if hash["get_emoticon"].has_key?(emoticon)
+    hash["get_emoticon"].each {|key, value|
+      if key == emoticon
+        value
+      end
+    }
+  else
+    "Sorry, emoticon not found."
+      
 end
 
 def get_english_meaning
