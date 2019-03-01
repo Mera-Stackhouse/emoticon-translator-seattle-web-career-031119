@@ -5,8 +5,18 @@ require "yaml"
 
 def load_library(file)
   hash = YAML.load_file(file)
+  new_hash = {get_meaning: {}, get_emoticon: {}}
   hash.each {|key, value|
+    key1 = key
+    value.each {|element|
+      if element.index == 0 
+        new_hash[:get_emoticon][element] = value[1]
+      elsif element.index == 1 
+        new_hash[:get_meaning][element] = key1
+      end
   }
+  
+  
 end
 
 def get_japanese_emoticon
