@@ -11,7 +11,7 @@ def load_library(file)
     value.each {|element|
       if value.index(element) == 0 
         new_hash[:get_emoticon][element] = value[1]
-      elsif element.index == 1 
+      elsif value.index(element) == 1 
         new_hash[:get_meaning][element] = key1
       end
     }
