@@ -14,9 +14,9 @@ def load_library(file)
       elsif element.index == 1 
         new_hash[:get_meaning][element] = key1
       end
+    }
   }
   new_hash
-  
 end
 
 def get_japanese_emoticon
