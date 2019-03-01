@@ -15,7 +15,7 @@ def load_library(file)
         new_hash[:get_meaning][element] = key1
       end
   }
-  
+  new_hash
   
 end
 
@@ -26,3 +26,4 @@ end
 def get_english_meaning
   # code goes here
 end
+
