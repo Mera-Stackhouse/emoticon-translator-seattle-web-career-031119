@@ -6,7 +6,7 @@ file = './lib/emoticons.yml'
 def load_library(file)
   hash = YAML.load_file(file)
   hash.each {|key, value|
-    
+    binding.pry
 end
 
 def get_japanese_emoticon
