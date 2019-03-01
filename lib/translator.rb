@@ -5,7 +5,7 @@ file = './lib/emoticons.yml'
 
 def load_library(file)
   hash = YAML.load_file(file)
-  new_hash = {get_meaning: {}, get_emoticon: {}}
+  new_hash = {"get_meaning" => {}, "get_emoticon" => {}}
   hash.each {|key, value|
     key1 = key
     value.each {|element|
