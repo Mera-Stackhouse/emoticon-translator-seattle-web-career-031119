@@ -1,7 +1,7 @@
 require "pry"
 require "yaml"
 
-file = './lib/emoticons.yml'
+# file = './lib/emoticons.yml'
 
 def load_library(file)
   hash = YAML.load_file(file)
@@ -27,4 +27,3 @@ def get_english_meaning
   # code goes here
 end
 
-puts load_library(file)
